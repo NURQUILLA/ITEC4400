@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 1
+      Chapter case
+
+      Tinley Xeriscapes
+      Plants web page
+      Author: 
+      Date:   
+
+      Filename: js01.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Tinley Xeriscapes</title>
+   <link rel="stylesheet" media="screen and (max-device-width: 999px)" href="tinleyhand.css" />
+   <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="tinley.css" />
+   <link href="http://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet" type="text/css">
+   <script src="getEstimate.js" defer ></script>
+</head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1>
+            <img src="flower.png" width="132" height="120" alt="Tinley Xeriscapes" title="" id="logo1" />
+            <img src="flower.png" width="132" height="120" alt="Tinley Xeriscapes" title="" id="logo2" />
+            <img src="txlogo.png" width="132" height="120" alt="Tinley Xeriscapes" title="" id="logo3" />
+            tinley xeriscapes
+         </h1>
+      </header>
+
+      <nav>
+         <ul>
+            <li><a href="#">About Xeriscaping</a></li>
+            <li><a href="js01B.html">Plants</a></li>
+            <li><a href="#">See Our Work</a></li>
+            <li id="currentpage"><a href="#">Get An Estimate</a></li>
+         </ul>
+      </nav>
+        
+      <aside>
+         <ul>
+            <li id="blanket">Blanket Flower</li>
+            <li id="rugosa">Hedge Rose</li>
+            <li id="bluestem">Little Bluestem</li>
+         </ul>
+      </aside>
+    
+      <article>  
+         <h2>Order Form</h2>
+         <form>
+            
+               <label for="nameinput">
+                  Name
+                  <input type="text" id="nameinput" name="name" />
+               </label>
+               <label for="emailinput">
+                  Email
+                  <input type="email" id="emailinput" name="email" />
+               </label>
+               <label for="phoneinput">
+                  Phone
+                  <input type="text" id="phoneinput" name="phone" />
+               </label>
+               <label for="blanketQuantity">
+                  Blanket Flower Quantity
+                  <input type="number" id="blanketQuantity" name="blanketQ" />
+               </label>
+               <label for="hedgeRoseQuantity">
+                  Hedge Rose Quantity
+                  <input type="number" id="hedgeRoseQuantity" name="hedgeRoseQ" />
+               </label>
+               <label for="bluestemQuantity">
+                  Little Bluestem
+                  <input type="number" id="bluestemQuantity" name="bluestemQ" />
+               </label>
+               <input  id="submitbutton" type="button" value="Submit"/>
+       
+            
+            <div id="submitMsg" ></div>
+      </form>  
+      </article>
+    
+      <footer>
+         <p>Tinley Xeriscapes &bull; Tinley Park, IL 60477</p>
+      </footer>
+   </div>
+</body>
+</html>
