@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Project 2.1</title>
+   <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg">
+
+    <div class="title"><h1>Nelsons Pizza</h1></div>
+
+    <ul class="navigation">
+        <li><a href="index.html"><b>Customize Pizza</b></a></li>
+        <li><a href="checkout.html"><b>Checkout</b></a></li>
+    </ul>
+
+    <div class="box">
+
+        <div class="colL">
+            <p class="cust">Customize Your Za</p>
+    <fieldset> <legend>Size/Crust</legend>
+            <div>
+                <div>
+                    
+                    <label for="size" >Pizza Size(inches):&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="size" id="size" list="sizes" style="width: 55px;">
+
+                        <datalist id="sizes">
+	                        <option value="8" label="small">
+	                        <option value="12" label="medium">
+                            <option value="14" label="large">
+                    	    <option value="18" label="Big Boy">
+                        </datalist>
+                </div>
+
+                <div>
+                    <label for="crust">Pizza Crust:&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="crust" id="crust" list="crusts" >
+    
+                        <datalist id="crusts">
+                            <option value="thin" >
+                            <option value="hand tossed" >
+                            <option value="regular" >
+                            <option value="stuffed">
+                        </datalist>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset data-type="horizontal"><legend>Topings ($1.59 each)</legend>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                        <th id=""></th>
+                        <th id="">&nbsp; &#9679; &nbsp;&nbsp; &#9680; &nbsp;&nbsp; &#9681;</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td headers="peperoni" >Peperoni</td>
+                            <td>
+                                <input type="radio" id="full" name="pFill" value="full">
+                                <input type="radio" id="leftFull" name="pFill" value="lfull">
+                                <input type="radio" id="rigtFull" name="pFill" value="rfull">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td headers="sausage" >Sausage</td>
+                            <td>
+                                <input type="radio" id="full" name="sFill" value="full">
+                                <input type="radio" id="leftFull" name="sFill" value="lfull">
+                                <input type="radio" id="rigtFull" name="sFill" value="rfull">
+                            </td>
+                        </tr>
+                                                
+                        <tr>
+                            <td headers="ham" >Ham</td>
+                            <td>
+                                <input type="radio" id="full" name="hFill" value="full">
+                                <input type="radio" id="leftFull" name="hFill" value="lfull">
+                                <input type="radio" id="rigtFull" name="hFill" value="rfull">
+                            </td>
+                        </tr>
+                                                
+                        <tr>
+                            <td headers="chicken" >Chicken</td>
+                            <td>
+                                <input type="radio" id="full" name="cFill" value="full">
+                                <input type="radio" id="leftFull" name="cFill" value="lfull">
+                                <input type="radio" id="rigtFull" name="cFill" value="rfull">
+                            </td>
+                        </tr>
+                                                
+                        <tr>
+                            <td headers="onions" >Onions</td>
+                            <td>
+                                <input type="radio" id="full" name="oFill" value="full">
+                                <input type="radio" id="leftFull" name="oFill" value="lfull">
+                                <input type="radio" id="rigtFull" name="oFill" value="rfull">
+                            </td>
+                        </tr>
+                                                
+                        <tr>
+                            <td headers="greenPeppers" >Green Peppers</td>
+                            <td>
+                                <input type="radio" id="full" name="gpFill" value="full">
+                                <input type="radio" id="leftFull" name="gpFill" value="lfull">
+                                <input type="radio" id="rigtFull" name="gpFill" value="rfull">
+                            </td>
+                        </tr>
+                                                
+                        <tr>
+                            <td headers="mushrooms" >Mushrooms</td>
+                            <td>
+                                <input type="radio" id="full" name="mFill" value="full">
+                                <input type="radio" id="leftFull" name="mFill" value="lfull">
+                                <input type="radio" id="rigtFull" name="mFill" value="rfull">
+                            </td>
+                        </tr>
+                                                
+                        <tr>
+                            <td headers="blackOlives" >Black Olives</td>
+                            <td>
+                                <input type="radio" id="full" name="boFill" value="full">
+                                <input type="radio" id="leftFull" name="boFill" value="lfull">
+                                <input type="radio" id="rigtFull" name="boFill" value="rfull">
+                            </td>
+                        </tr>
+                                                
+                        <tr>
+                            <td headers="anchovies" >Anchovies</td>
+                            <td>
+                                <input type="radio" id="full" name="aFill" value="full">
+                                <input type="radio" id="leftFull" name="aFill" value="lfull">
+                                <input type="radio" id="rigtFull" name="aFill" value="rfull">
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+         </fieldset>
+
+        </div>
+
+        <div class="colC">
+            <img class="pizza" src="cheese_pizza.jpg" alt="Pizza" width="80%" height="80%">
+            <button class="button"> Add To Cart </button>
+        </div>
+
+        <div class="colR">
+            <p>Items in  Cart <br>_______________________</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

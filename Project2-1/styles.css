@@ -1,0 +1,90 @@
+.bg{
+    background-color:rgb(150, 215, 215);
+}
+
+.title{
+    background-color: rgb(150, 215, 215);
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    size: 1000px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(41, 90, 99);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(215, 219, 233);
+  }  
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(241, 158, 158, 0.91);
+    margin-bottom: 1000px;
+    }
+
+  .box * { 
+    box-sizing: border-box; 
+    }
+  
+  .colL { 
+    width: 40%; 
+    }
+
+  .colC { 
+    width: 40%; 
+    }
+
+  .colR { 
+    width: 20%; 
+    }
+
+    .half-circle {
+        width: 0px;
+        height: 5px;
+        background-color: red;
+        border-top-right-radius: 1000px;
+        border-bottom-right-radius: 1000px;
+        border: 5px solid red;
+        border-bottom: -1;
+    }
+
+    .pizza{
+        background-color: transparent;
+        border-radius: 500px;
+        display:inline-flex;
+    }
+
+    .button{
+        margin-left: 30%;
+        margin-top: 8%;
+    }
+
+    input[type=text] {
+        border: none;
+        border-bottom: 2px solid rgba(228, 211, 79, 0.875);
+        background-color: transparent;  
+        width: 100px;    
+      }
+
+      .cust{
+        text-align: center;
+        line-height: 0.2;
+      }
