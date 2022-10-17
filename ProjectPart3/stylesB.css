@@ -1,0 +1,80 @@
+body {
+	background-color: #ba62bd;
+    background-repeat: repeat-xy;
+	height: 100%;
+}
+main {
+    text-align: center;
+    background-color: #e2c1e3;
+}
+
+.container {
+	position: relative;
+	text-align: center;
+	color: #ba62bd;
+	width: device-width;
+}
+
+.centered {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-70%, -50%);
+	color: #000000;
+	text-shadow: 2px 2px #8B0000;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    line-height: 150%;
+    text-shadow: 2px 2px #CCCCCC;
+}
+
+.category {
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: #003366;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 1px #666;
+}
+
+footer {
+    font-size: .70em;
+    font-style: italic;
+}
+
+.wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 500px;
+    max-width: 1000px;
+    background-color: #ba62bd;
+    color: #000066;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+}
+
+.dmgcartimg{
+    margin-left: 390px;
+    height: 200px;
+    width: 200px;
+}
+
+.shipp{
+    background-color: #CCCCCC;
+}
+
+input:valid, input:focus:valid, select:valid, select:focus:valid{
+    outline: #028007;
+    background-color: none;
+}
+
+input:invalid, input:focus:invalid, select:invalid, select:focus:invalid{
+    outline: #d03907;
+    background-color: rgba(253, 9, 9, 0.5);
+}

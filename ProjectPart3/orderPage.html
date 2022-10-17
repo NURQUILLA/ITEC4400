@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nelson's Shop</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stylesB.css" />
+<script src="orderPage.js"></script>
+<script src="js.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="container">
+        <img src="retro.jpg" alt="Retro" style="width:200px; height:100px;">
+    </div>
+    
+    <h2>
+    Order Checkout
+    </h2>
+
+    <section id="orderSect">
+        <table id="orderTab">
+            <caption>Your Order</caption>
+            <tr>
+                <td id="product"> Product: </td>
+                <td id="qty">Qty: </td>
+                <td id="total">Total: </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"> Subtotal: </td>
+                <td> $ </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"> Tax(5%): </td>
+                <td> $ </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"> Delivery Fee (7% of Subtotal): </td>
+                <td> $ </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"> Total (Includes Taxes and Fees): </td>
+                <td> $ </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="shipp">
+        <h1>Payment/Shipping Info</h1>
+
+        <form id="pay" name="pay" mehtod="post" action="submitedPayment.html">
+            <fieldset>
+                <legend>CreditCard Information</legend>
+
+                <label for="cardName">* Name</label>
+                <input name="cardName" id="cardName" required type="text" />
+
+                <br>
+                <label for="email">Email</label>
+                <input name="email" id="email" required type="text" />
+
+                <br><br>
+                <label>Shipping Information</label>
+                <fieldset id="address">
+                    <label for="address ">* Address</label>
+                    <input name="adress" id="address" required type="text" />
+
+                    <label for="city">* City</label>
+                    <input name="city" id="city" required type="text" />
+
+                    <label for="state">* State</label>
+                    <input name="state" id="state" required type="text" />
+                </fieldset>
+
+                <br><br>
+                <label>* Credit Card Type</label>
+                <fieldset id="cards">
+                    <label class="cardLabel">
+                        <input name="credit" value="amex" type="radio" required />
+                        <span>American Express</span>
+                    </label>
+
+                    <label class="cardLabel">
+                        <input name="credit" value="discover" type="radio" required />
+                        <span>Discover</span>
+                    </label>
+
+                    <label class="cardLabel">
+                        <input name="credit" value="master" type="radio" required />
+                        <span>MasterCard</span>
+                    </label>
+
+                    <label class="cardLabel">
+                        <input name="credit" value="visa" type="radio" required />
+                        <span>Visa</span>
+                    </label>
+                </fieldset>
+
+                <br>
+                <label for="cardNumber">*  Credit Card Number</label>
+                <input name="cardNumber" id="cardNumber" required type="text"
+                 />
+
+                <br><br>
+                <label for="mExp">* Expiration Date</label>
+                <select id="mExp" name="mExp"> 
+                    <option value="mm">mm</option>   
+                    <option value="01">01</option>   
+                    <option value="02">02</option>   
+                    <option value="03">03</option>   
+                    <option value="04">04</option>   
+                    <option value="05">05</option>   
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <span id="seperator"> / </span>
+                <select name="yExp" id="yExp">
+                    <option value="yy">yy</option>   
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                </select>
+                <br><br>
+                <label for="cvc">* CVC</label>
+                <input name="cvc" id="cvc" required pattern="^\{3,4}$" type="text"/>
+
+            </fieldset>
+
+            <p>Items marked with * are REQUIERED</p>
+            <input type="submit" id="submitBtn" value="Submit Payment" />
+        </form>
+    </section>
+
+</body>
+
+</html>
