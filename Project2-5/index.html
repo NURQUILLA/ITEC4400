@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Nelsons Pizza</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="js.js" async></script>
+  </head>
+
+  <body class="bg">
+
+    <div class="title"><h1>Nelsons Pizza</h1></div>
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Customize Pizza</a></li>
+          <li><a href="checkout.html">CheckOut</a></li>
+        </ul>
+      </nav>
+
+
+    <div class="box">
+
+        <div class="colC">
+      <h1>Create Your Pizza</h1>
+
+      <fieldset id="pizzaOptions">
+        <label id="label" for="size">Size (in.)</label>
+        <select id="size" name="size">
+          <option value="12">12" ($11.00)</option>
+          <option value="14" selected>14" ($13.00)</option>
+          <option value="16">16" ($16.00)</option>
+          <option value="18">18" ($20.00)</option>
+        </select>
+
+        <br>
+
+        <label for="crust">Pizza Crust</label>
+        <select name="crust" id="crust">
+          <option value="thin" selected>thin</option>
+          <option value="thick">thick</option>
+          <option value="stuffed">stuffed</option>
+          <option value="pan">pan</option>
+        </select>
+
+        <br>
+
+        <label for="sauce">Double Sauce<br />(+ $1.50)</label>
+        <input type="checkbox" id="sauce" name="sauce" />
+        <label for="cheese">Double Cheese<br />(+ $1.50)</label>
+        <input type="checkbox" id="cheese" name="cheese" />
+      </fieldset>
+
+      <fieldset id="toppings" data-type="horizontal">
+          <legend>Toppings ($1.59 ea.)</legend>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th id=""></th>
+                    <th id=""> &#9679; &nbsp;&nbsp; &#9680; &nbsp;&nbsp; &#9681;</th>
+                </tr>
+            </thead>
+
+        <tbody>
+        <tr>
+          <td headers="peperoni">Pepperoni</td>
+            <td>
+          <input class="topping" type="radio" name="pepperoni" value="full" />
+          <input class="topping" type="radio" name="pepperoni" value="left" />
+          <input class="topping" type="radio" name="pepperoni" value="right" />
+          <input class="topping" type="radio" name="pepperoni" value="none" checked/>
+            </td>
+        </tr>
+
+        <tr>
+          <td headers="ham">Ham</td>
+          <td>
+          <input class="topping" type="radio" name="ham" value="full" />
+          <input class="topping" type="radio" name="ham" value="left" />
+          <input class="topping" type="radio" name="ham" value="right" />
+          <input class="topping" type="radio" name="ham" value="none" checked />
+          </td>
+        </tr>
+
+        <tr>
+          <td headers="sausage">Sausage</td>
+          <td>
+          <input class="topping" type="radio" name="sausage" value="full" />
+          <input class="topping" type="radio" name="sausage" value="left" />
+          <input class="topping" type="radio" name="sausage" value="right" />
+          <input class="topping" type="radio" name="sausage" value="none" checked />
+          </td>
+        </tr>
+
+        <tr>
+          <td headers="chicken">Chicken</td>
+          <td>
+          <input class="topping" type="radio" name="chicken" value="full" />
+          <input class="topping" type="radio" name="chicken" value="left" />
+          <input class="topping" type="radio" name="chicken" value="right" />
+          <input class="topping" type="radio" name="chicken" value="none" checked />
+          </td>
+        </tr>
+
+        <tr>
+          <td headers="mushroom">Mushrooms</td>
+          <td>
+          <input class="topping" type="radio" name="mushroom" value="full" />
+          <input class="topping" type="radio" name="mushroom" value="left" />
+          <input class="topping" type="radio" name="mushroom" value="right" />
+          <input class="topping" type="radio" name="mushroom" value="none" checked />
+          </td>
+        </tr>
+
+        <tr>
+          <td headers="greenPeppers">Green Peppers</td>
+          <td>
+          <input class="topping" type="radio" name="greenpepper" value="full" />
+          <input class="topping" type="radio" name="greenpepper" value="left" />
+          <input class="topping" type="radio" name="greenpepper" value="right" />
+          <input class="topping" type="radio" name="greenpepper" value="none" checked />
+          </td>
+        </tr>
+        
+        <tr>
+          <td headers="onions">Onions</td>
+          <td>
+          <input class="topping" type="radio" name="onion" value="full" />
+          <input class="topping" type="radio" name="onion" value="left" />
+          <input class="topping" type="radio" name="onion" value="right" />
+          <input class="topping" type="radio" name="onion" value="none" checked />
+          </td>
+        </tr>
+
+        <tr>
+          <td headers="jalapeno">Jalapenos</td>
+          <td>
+          <input class="topping" type="radio" name="jalapeno" value="full" />
+          <input class="topping" type="radio" name="jalapeno" value="left" />
+          <input class="topping" type="radio" name="jalapeno" value="right" />
+          <input class="topping" type="radio" name="jalapeno" value="none" checked />
+          </td>
+        </tr>
+
+        <tr>
+          <td headers="tomato">Tomatos</td>
+          <td>
+          <input class="topping" type="radio" name="tomato" value="full" />
+          <input class="topping" type="radio" name="tomato" value="left" />
+          <input class="topping" type="radio" name="tomato" value="right" />
+          <input class="topping" type="radio" name="tomato" value="none" checked />
+        </td>
+        </tr>
+    </tbody>
+        <table>
+      </fieldset>
+
+      <div id="pizzaBox">
+        <label id="quantity" for="quantity">Quantity</label>
+        <select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <input type="button" id="addToCart" value="ADD TO CART" />
+      </div>
+
+    </div>
+</div>
+
+
+    <div class="colL">
+      <div id="preview">
+        <img class="pizza" src="cheese_pizza.jpg" alt="Pizza" width="80%" height="80%">
+      </div>
+    </div>
+
+    <div class="colR">
+        <div>
+            <p id="summary"></p>
+            <h3>Shopping Cart</h3>
+            <table id="cart">
+              <thead>
+                <tr>
+                  <th>item</th>
+                  <th>qty</th>
+                  <th>price</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td colspan="2">TOTAL</td>
+                  <td colspan="2">
+                    <input type="text" id="total" value="" readonly />
+                  </td>
+                </tr>
+              </tfoot>
+              <tbody></tbody>
+            </table>
+          </div>
+    </div>
+
+  </body>
+</html>
